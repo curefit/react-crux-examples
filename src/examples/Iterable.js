@@ -3,7 +3,7 @@ import { CruxComponentCreator } from "react-crux"
 import {Disclaimer} from "../Disclaimer"
 const schema = {
     modelName: "employees",
-    title: "Employees",
+    title: "Employees with list of free-form Tags",
     creationTitle: "Employee",
     editModal: true,
     fields: [
@@ -21,21 +21,13 @@ const schema = {
             field: "age"
         },
         {
-            title: "Email Address",
-            field: "emailAddress",
-            editable: true,
-            display: true
-        },
-        {
-            title: "Gender",
-            field: "gender",
+            title: "Tags",
             editable: true,
             display: true,
-            type: "select",
-            foreign: {
-                modelName: "genders",
-                key: "id",
-                title: "displayName"
+            field: "tags",
+            type: "iterable",
+            iterabletype: {
+                title: "Tag"
             }
         }
     ],
@@ -44,7 +36,7 @@ const schema = {
 
 const Employees = CruxComponentCreator.create(schema)
 
-class Select extends Component {
+class Iterable extends Component {
     render() {
         return <div style={{padding: 20}}>
             <div style={{display: "flex", padding: 20, borderBottom: "1px solid #EEE"}}>
@@ -56,4 +48,4 @@ class Select extends Component {
     }
 }
 
-export { Select }
+export { Iterable }

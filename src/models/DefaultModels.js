@@ -1,5 +1,7 @@
 import {bodyParts, bodyPartTags, bodyPartTypes} from "./BodyParts"
-import {Employees} from "./Employees"
+import {AddressTypes, Employees} from "./Employees"
+import {Roles} from "./Employees"
+import {DurationTypes} from "./Employees"
 
 const DefaultModels= {
     mediaTypes: [
@@ -89,12 +91,19 @@ const DefaultModels= {
         {
             id: "FEMALE",
             displayName: "Female"
+        },
+        {
+            id: "OTHER",
+            displayName: "Other"
         }
     ],
     bodyParts: bodyParts,
     bodyPartTypes: bodyPartTypes,
     bodyPartTagss: bodyPartTags,
-    employees: Employees
+    employees: Employees,
+    durationTypes: DurationTypes,
+    roles: Roles,
+    addressTypes: AddressTypes
 }
 
 export { DefaultModels }

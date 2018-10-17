@@ -1,7 +1,7 @@
 $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
-$bootstrap-sass-asset-helper: true;
+$bootstrap-sass-asset-helper: false;
 
-@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
 @import "~react-crux/scss/crux.scss";
 
 html {

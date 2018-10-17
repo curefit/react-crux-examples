@@ -128,7 +128,7 @@ const EmployeesSelectiveEdits = CruxComponentCreator.create(selectiveEditsSchema
 
 class Options extends Component {
     render() {
-        return <div>
+        return <div style={{padding: 20}}>
             <div style={{display: "flex", padding: 20, borderBottom: "1px solid #EEE"}}>
                 <div style={{width: 500}}><EmployeesCreationDisabled/></div>
                 <pre>{JSON.stringify(creationDisabledSchema, null, 2)}</pre>
