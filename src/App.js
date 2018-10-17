@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import {SimpleTable} from "./examples/SimpleTable"
 import {Multi} from "./examples/Multi"
 import {Select} from "./examples/Select"
+import {Options} from "./examples/Options"
 
 import {
     HashRouter as Router,
@@ -19,10 +20,12 @@ class App extends Component {
   render() {
     return <Router>
       <div style={{display: "flex", flexDirection: "row"}}>
-        <div style={{flexDirection: "column", width: 200, backgroundColor: "#333", padding: 30, color: "white"}}>
+        <div style={{width: 200, backgroundColor: "#333", padding: 30, zIndex: 1, position: "fixed", height:"100%"}} />
+        <div style={{flexDirection: "column", width: 200, padding: 30, color: "white", zIndex: 2}}>
           <div style={{fontWeight: "bold", display: "flex", justifyContent:"center"}}>React CRUX Examples</div>
           <div style={{height: 50}}></div>
           <div style={{height: 50, paddingLeft: 14}}><Link to="/">Simple Table + Form</Link></div>
+          <div style={{height: 50, paddingLeft: 14}}><Link to="/options">Edit, Create, Delete Options</Link></div>
           <div style={{height: 50, paddingLeft: 14}}><Link to="/multi">Multiple Components</Link></div>
           <div style={{height: 50, paddingLeft: 14}}><Link to="/select">Select</Link></div>
           <div style={{height: 50, paddingLeft: 14}}><Link to="/iterable">Iterable</Link></div>
@@ -32,6 +35,7 @@ class App extends Component {
         <div style={{flexDirection: "column", flex: 1}}>
             <Switch>
               <Route path="/" exact={true} component={SimpleTable} />
+              <Route path="/options" exact={true} component={Options} />
               <Route path="/multi" component={Multi}/>
               <Route path="/select" component={Select}/>
             </Switch>

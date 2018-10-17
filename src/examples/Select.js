@@ -1,7 +1,7 @@
-import * as React from "react"
+import React, {Component} from "react"
 import { CruxComponentCreator } from "react-crux"
-
-const constants = {
+import {Disclaimer} from "../Disclaimer"
+const schema = {
     modelName: "bodyParts",
     title: "Body Parts",
     creationTitle: "Body Part",
@@ -47,5 +47,15 @@ const constants = {
     createModal: true
 }
 
-const BodyParts = CruxComponentCreator.create(constants)
-export { BodyParts as Select }
+const BodyParts = CruxComponentCreator.create(schema)
+
+class Select extends Component {
+    render() {
+        return <div style={{width: 400, padding: 20}}>
+            <BodyParts/>
+            <Disclaimer/>
+        </div>
+    }
+}
+
+export { Select }

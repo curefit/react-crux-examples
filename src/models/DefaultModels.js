@@ -1,4 +1,5 @@
 import {bodyParts, bodyPartTags, bodyPartTypes} from "./BodyParts"
+import {Employees} from "./Employees"
 
 const DefaultModels= {
     mediaTypes: [
@@ -82,7 +83,8 @@ const DefaultModels= {
     ],
     bodyParts: bodyParts,
     bodyPartTypes: bodyPartTypes,
-    bodyPartTagss: bodyPartTags
+    bodyPartTagss: bodyPartTags,
+    employees: Employees
 }
 
 export { DefaultModels }
