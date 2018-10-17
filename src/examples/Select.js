@@ -1,5 +1,5 @@
 import * as React from "react"
-import { CruxComponentCreator } from "@curefit/react-crux"
+import { CruxComponentCreator } from "react-crux"
 
 const constants = {
     modelName: "bodyParts",

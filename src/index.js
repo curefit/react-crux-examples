@@ -8,7 +8,7 @@ import { applyMiddleware, combineReducers, createStore } from "redux"
 import { createLogger } from "redux-logger"
 import thunk from "redux-thunk"
 
-import { CruxReducerFactory } from "@curefit/react-crux"
+import { CruxReducerFactory } from "react-crux"
 import { UserReducer } from "./UserReducer"
 
 import { DefaultModels } from "./models/DefaultModels"
