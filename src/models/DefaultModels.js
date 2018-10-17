@@ -81,6 +81,16 @@ const DefaultModels= {
             title: "seconds"
         }
     ],
+    genders: [
+        {
+            id: "MALE",
+            displayName: "Male"
+        },
+        {
+            id: "FEMALE",
+            displayName: "Female"
+        }
+    ],
     bodyParts: bodyParts,
     bodyPartTypes: bodyPartTypes,
     bodyPartTagss: bodyPartTags,

@@ -2,46 +2,41 @@ import React, {Component} from "react"
 import { CruxComponentCreator } from "react-crux"
 import {Disclaimer} from "../Disclaimer"
 const schema = {
-    modelName: "bodyParts",
-    title: "Body Parts",
-    creationTitle: "Body Part",
+    modelName: "employees",
+    title: "Employees",
+    creationTitle: "Employee",
     editModal: true,
     fields: [
         {
-            title: "Body Part",
-            field: "title",
+            title: "Name",
+            field: "name",
             editable: true,
             representative: true,
             display: true
         },
         {
-            title: "Type",
+            title: "Age",
             editable: true,
             display: true,
-            field: "typeId",
-            type: "select",
-            foreign: {
-                modelName: "bodyPartTypes",
-                key: "_id",
-                title: "title",
-            }
+            field: "age"
         },
         {
-            title: "Tags",
-            field: "tags",
+            title: "Email Address",
+            field: "emailAddress",
+            editable: true,
+            display: true
+        },
+        {
+            title: "Gender",
+            field: "gender",
             editable: true,
             display: true,
-            type: "iterable",
-            iterabletype: {
-                type: "select",
-                title: "Tag",
-                displayChildren: "inline",
-                foreign: {
-                    modelName: "bodyPartTags",
-                    key: "_id",
-                    title: "title",
-                },
-            },
+            type: "select",
+            foreign: {
+                modelName: "genders",
+                key: "id",
+                title: "displayName"
+            }
         }
     ],
     createModal: true
@@ -51,8 +46,11 @@ const BodyParts = CruxComponentCreator.create(schema)
 
 class Select extends Component {
     render() {
-        return <div style={{width: 400, padding: 20}}>
-            <BodyParts/>
+        return <div style={{padding: 20}}>
+            <div style={{display: "flex", padding: 20, borderBottom: "1px solid #EEE"}}>
+                <div style={{width: 500}}><BodyParts/></div>
+                <pre>{JSON.stringify(schema, null, 2)}</pre>
+            </div><BodyParts/>
             <Disclaimer/>
         </div>
     }

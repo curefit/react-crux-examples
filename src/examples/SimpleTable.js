@@ -35,8 +35,11 @@ const Employees = CruxComponentCreator.create(schema)
 
 class SimpleTable extends Component {
     render() {
-        return <div style={{width: 500, padding: 20}}>
-            <Employees/>
+        return <div style={{padding: 20}}>
+            <div style={{display: "flex", padding: 20, borderBottom: "1px solid #EEE"}}>
+                <div style={{width: 500}}><Employees/></div>
+                <pre>{JSON.stringify(schema, null, 2)}</pre>
+            </div>
             <Disclaimer/>
         </div>
     }
