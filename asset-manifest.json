@@ -1,14 +1,14 @@
 {
-  "main.css": "/react-crux-examples/static/css/main.45fff4cf.chunk.css",
-  "main.js": "/react-crux-examples/static/js/main.4d50ee87.chunk.js",
-  "main.js.map": "/react-crux-examples/static/js/main.4d50ee87.chunk.js.map",
-  "static/js/1.2ec40061.chunk.js": "/react-crux-examples/static/js/1.2ec40061.chunk.js",
-  "static/js/1.2ec40061.chunk.js.map": "/react-crux-examples/static/js/1.2ec40061.chunk.js.map",
+  "main.css": "/react-crux-examples/static/css/main.16e71c8a.chunk.css",
+  "main.js": "/react-crux-examples/static/js/main.fcad4c9b.chunk.js",
+  "main.js.map": "/react-crux-examples/static/js/main.fcad4c9b.chunk.js.map",
+  "static/js/1.c79dc4ed.chunk.js": "/react-crux-examples/static/js/1.c79dc4ed.chunk.js",
+  "static/js/1.c79dc4ed.chunk.js.map": "/react-crux-examples/static/js/1.c79dc4ed.chunk.js.map",
   "runtime~main.js": "/react-crux-examples/static/js/runtime~main.b23c7967.js",
   "runtime~main.js.map": "/react-crux-examples/static/js/runtime~main.b23c7967.js.map",
-  "static/media/logo.svg": "/react-crux-examples/static/media/logo.5d5d9eef.svg",
-  "static/css/main.45fff4cf.chunk.css.map": "/react-crux-examples/static/css/main.45fff4cf.chunk.css.map",
+  "static/media/App.scss": "/react-crux-examples/static/media/glyphicons-halflings-regular.448c34a5.woff2",
+  "static/css/main.16e71c8a.chunk.css.map": "/react-crux-examples/static/css/main.16e71c8a.chunk.css.map",
   "index.html": "/react-crux-examples/index.html",
-  "precache-manifest.9c569aefde621ac4ef2ba4f427ad4547.js": "/react-crux-examples/precache-manifest.9c569aefde621ac4ef2ba4f427ad4547.js",
+  "precache-manifest.30949bdfc477b42e4d21404044762363.js": "/react-crux-examples/precache-manifest.30949bdfc477b42e4d21404044762363.js",
   "service-worker.js": "/react-crux-examples/service-worker.js"
 }
