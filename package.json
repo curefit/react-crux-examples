@@ -3,10 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@curefit/react-crux": "^0.0.22",
+    "bootstrap-sass": "^3.3.7",
     "gh-pages": "^2.0.1",
+    "history": "^4.7.2",
+    "node-sass": "^4.9.4",
     "react": "^16.5.2",
+    "react-bootstrap": "^0.32.4",
     "react-dom": "^16.5.2",
-    "react-scripts": "2.0.5"
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.5",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
