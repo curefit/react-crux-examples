@@ -7089,9 +7089,9 @@ react-bootstrap@^0.32.3, react-bootstrap@^0.32.4:
     uncontrollable "^5.0.0"
     warning "^3.0.0"
 
-react-crux@^0.0.25:
-  version "0.0.25"
-  resolved "https://registry.yarnpkg.com/react-crux/-/react-crux-0.0.25.tgz#1d0c3cb5b8aaf66ff68c51b0d9298dda38324e4b"
+react-crux@^0.0.26:
+  version "0.0.26"
+  resolved "https://registry.yarnpkg.com/react-crux/-/react-crux-0.0.26.tgz#c434e05950650e60a943eccd989972f62780cf0e"
   dependencies:
     autobind-decorator "^2.1.0"
     lodash "^4.17.10"
