@@ -6,6 +6,7 @@ import {Iterable} from "./examples/Iterable"
 import {Nested} from "./examples/Nested"
 import {DatePicker} from "./examples/DatePicker"
 import {Checkbox} from "./examples/Checkbox"
+import {BigText} from "./examples/BigText"
 
 import {
     HashRouter as Router,
@@ -39,6 +40,7 @@ class App extends Component {
                     <div style={{height: 40, paddingLeft: 4}}><Link to="/file">File Upload</Link></div>
                     <div style={{height: 40, paddingLeft: 4}}>Custom Rendering</div>
                     <div style={{height: 40, paddingLeft: 4}}>Dynamic Rendering</div>
+                    <div style={{height: 40, paddingLeft: 4}}><Link to="/bigtext">Bigtext and Tinyinput</Link></div>
                 </div>
                 <div style={{flexDirection: "column", flex: 1, marginLeft: 200}}>
                     <Switch>
@@ -52,6 +54,7 @@ class App extends Component {
                         <Route path="/file" component={FileUpload}/>
                         <Route path="/datepicker" component={DatePicker}/>
                         <Route path="/checkbox" component={Checkbox}/>
+                        <Route path="/bigtext" component={BigText}/>
                     </Switch>
                 </div>
             </div>
