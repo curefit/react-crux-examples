@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/react-crux-examples/precache-manifest.30949bdfc477b42e4d21404044762363.js"
+  "/react-crux-examples/precache-manifest.4d6529d32c39917ba071b2b1ddd0b8cb.js"
 );
 
 workbox.clientsClaim();

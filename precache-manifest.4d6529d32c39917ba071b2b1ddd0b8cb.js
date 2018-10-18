@@ -24,19 +24,19 @@ self.__precacheManifest = [
     "url": "/react-crux-examples/static/js/runtime~main.b23c7967.js"
   },
   {
-    "revision": "fcad4c9bafd75b38ce83",
-    "url": "/react-crux-examples/static/js/main.fcad4c9b.chunk.js"
+    "revision": "196f755cf8fbe3a574f6",
+    "url": "/react-crux-examples/static/js/main.196f755c.chunk.js"
   },
   {
     "revision": "c79dc4ed4a6b918a62cb",
     "url": "/react-crux-examples/static/js/1.c79dc4ed.chunk.js"
   },
   {
-    "revision": "fcad4c9bafd75b38ce83",
+    "revision": "196f755cf8fbe3a574f6",
     "url": "/react-crux-examples/static/css/main.16e71c8a.chunk.css"
   },
   {
-    "revision": "768c4933cd989f56483b6153f05cd049",
+    "revision": "80ce858b6697c48972f18f9574cea667",
     "url": "/react-crux-examples/index.html"
   }
 ];
