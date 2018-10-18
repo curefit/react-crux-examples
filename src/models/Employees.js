@@ -1,5 +1,6 @@
 export const Employees = [
     {
+        id: 1,
         name: "John Doe",
         age: "31",
         emailAddress: "johndoe@cruxcomponent.com",
@@ -29,18 +30,22 @@ export const Employees = [
             city: "London",
             zipCode: "45634"
         },
-        isPartTime: true
+        isPartTime: true,
+        manager: 2
     },
     {
+        id: 2,
         name: "John Hancock",
         age: "16",
         emailAddress: "johnhancock@cruxcomponent.com",
         tags: ["Tag2"],
         roles: ["VIEWER", "EDITOR"],
         joiningDate: "2018-01-13T06:30:58.000Z",
+        manager: 4,
         selfIntro: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+        id: 3,
         name: "Jane Doe",
         age: "42",
         emailAddress: "janedoe@cruxcomponent.com",
@@ -62,9 +67,11 @@ export const Employees = [
                 }
             },
         ],
-        isPartTime: false
+        isPartTime: false,
+        manager: 4
     },
     {
+        id: 4,
         name: "Ankit Gupta",
         age: "33",
         emailAddress: "ankit.gupta@cruxcomponent.com",

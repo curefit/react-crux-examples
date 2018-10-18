@@ -7,6 +7,7 @@ import {Nested} from "./examples/Nested"
 import {DatePicker} from "./examples/DatePicker"
 import {Checkbox} from "./examples/Checkbox"
 import {BigText} from "./examples/BigText"
+import {Typeahead} from "./examples/Typeahead"
 
 import {
     HashRouter as Router,
@@ -31,6 +32,7 @@ class App extends Component {
                     <div style={{height: 40, paddingLeft: 4}}><Link to="/">Simple Table + Form</Link></div>
                     <div style={{height: 40, paddingLeft: 4}}><Link to="/options">Edit, Create Options</Link></div>
                     <div style={{height: 40, paddingLeft: 4}}><Link to="/select">Select</Link></div>
+                    <div style={{height: 40, paddingLeft: 4}}><Link to="/typeahead">Typeahead</Link></div>
                     <div style={{height: 40, paddingLeft: 4}}><Link to="/iterable">Iterable</Link></div>
                     <div style={{height: 40, paddingLeft: 4}}><Link to="/iterableofselect">Iterable of Select</Link></div>
                     <div style={{height: 40, paddingLeft: 4}}><Link to="/nested">Nested</Link></div>
@@ -55,6 +57,7 @@ class App extends Component {
                         <Route path="/datepicker" component={DatePicker}/>
                         <Route path="/checkbox" component={Checkbox}/>
                         <Route path="/bigtext" component={BigText}/>
+                        <Route path="/typeahead" component={Typeahead}/>
                     </Switch>
                 </div>
             </div>
