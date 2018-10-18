@@ -4,6 +4,8 @@ import {Select} from "./examples/Select"
 import {Options} from "./examples/Options"
 import {Iterable} from "./examples/Iterable"
 import {Nested} from "./examples/Nested"
+import {DatePicker} from "./examples/DatePicker"
+import {Checkbox} from "./examples/Checkbox"
 
 import {
     HashRouter as Router,
@@ -16,6 +18,7 @@ import { connect } from 'react-redux'
 import './App.scss';
 import {IterableOfSelect} from "./examples/IterableOfSelect"
 import {IterableOfNested} from "./examples/IterableOfNested"
+import {FileUpload} from "./examples/FileUpload"
 
 class App extends Component {
     render() {
@@ -31,6 +34,11 @@ class App extends Component {
                     <div style={{height: 40, paddingLeft: 4}}><Link to="/iterableofselect">Iterable of Select</Link></div>
                     <div style={{height: 40, paddingLeft: 4}}><Link to="/nested">Nested</Link></div>
                     <div style={{height: 40, paddingLeft: 4}}><Link to="/iterableofnested">Iterable of Nested</Link></div>
+                    <div style={{height: 40, paddingLeft: 4}}><Link to="/datepicker">Date Picker</Link></div>
+                    <div style={{height: 40, paddingLeft: 4}}><Link to="/checkbox">Checkbox</Link></div>
+                    <div style={{height: 40, paddingLeft: 4}}><Link to="/file">File Upload</Link></div>
+                    <div style={{height: 40, paddingLeft: 4}}>Custom Rendering</div>
+                    <div style={{height: 40, paddingLeft: 4}}>Dynamic Rendering</div>
                 </div>
                 <div style={{flexDirection: "column", flex: 1, marginLeft: 200}}>
                     <Switch>
@@ -41,6 +49,9 @@ class App extends Component {
                         <Route path="/nested" component={Nested}/>
                         <Route path="/iterableofselect" component={IterableOfSelect}/>
                         <Route path="/iterableofnested" component={IterableOfNested}/>
+                        <Route path="/file" component={FileUpload}/>
+                        <Route path="/datepicker" component={DatePicker}/>
+                        <Route path="/checkbox" component={Checkbox}/>
                     </Switch>
                 </div>
             </div>

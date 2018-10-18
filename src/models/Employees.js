@@ -28,14 +28,16 @@ export const Employees = [
             addressLine2: "Baker Street",
             city: "London",
             zipCode: "45634"
-        }
+        },
+        isPartTime: true
     },
     {
         name: "John Hancock",
         age: "16",
         emailAddress: "johnhancock@cruxcomponent.com",
         tags: ["Tag2"],
-        roles: ["VIEWER", "EDITOR"]
+        roles: ["VIEWER", "EDITOR"],
+        joiningDate: "2018-01-13T06:30:58.000Z"
     },
     {
         name: "Jane Doe",
@@ -58,7 +60,8 @@ export const Employees = [
                     durationType: "YEAR"
                 }
             },
-        ]
+        ],
+        isPartTime: false
     },
     {
         name: "Ankit Gupta",
@@ -71,7 +74,8 @@ export const Employees = [
             addressLine1: "12 Grimmauld Palace",
             city: "London",
             zipCode: "45634"
-        }
+        },
+        joiningDate: "October 12, 2018"
     }
 ]
 

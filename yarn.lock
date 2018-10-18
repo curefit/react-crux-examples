@@ -7089,9 +7089,9 @@ react-bootstrap@^0.32.3, react-bootstrap@^0.32.4:
     uncontrollable "^5.0.0"
     warning "^3.0.0"
 
-react-crux@^0.0.24:
-  version "0.0.24"
-  resolved "https://registry.yarnpkg.com/react-crux/-/react-crux-0.0.24.tgz#0191ce9bfce3965105fad7edf4387648f209c4f1"
+react-crux@^0.0.25:
+  version "0.0.25"
+  resolved "https://registry.yarnpkg.com/react-crux/-/react-crux-0.0.25.tgz#1d0c3cb5b8aaf66ff68c51b0d9298dda38324e4b"
   dependencies:
     autobind-decorator "^2.1.0"
     lodash "^4.17.10"
@@ -7105,13 +7105,13 @@ react-crux@^0.0.24:
     superagent "^3.8.3"
 
 react-datepicker@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/react-datepicker/-/react-datepicker-1.6.0.tgz#6b7a87e949f3bbd94872554be6a0119bd908a987"
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/react-datepicker/-/react-datepicker-1.7.0.tgz#a5d8c689e8c7a3753d3e277589b03f097dcb3392"
   dependencies:
     classnames "^2.2.5"
     prop-types "^15.6.0"
     react-onclickoutside "^6.7.1"
-    react-popper "^0.9.1"
+    react-popper "^1.0.2"
 
 react-dev-utils@^6.0.5:
   version "6.0.5"
@@ -7183,14 +7183,7 @@ react-overlays@^0.8.0, react-overlays@^0.8.1:
     react-transition-group "^2.2.0"
     warning "^3.0.0"
 
-react-popper@^0.9.1:
-  version "0.9.5"
-  resolved "https://registry.yarnpkg.com/react-popper/-/react-popper-0.9.5.tgz#02a24ef3eec33af9e54e8358ab70eb0e331edd05"
-  dependencies:
-    popper.js "^1.14.1"
-    prop-types "^15.6.1"
-
-react-popper@^1.0.0:
+react-popper@^1.0.0, react-popper@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/react-popper/-/react-popper-1.0.2.tgz#0e72f338b7f15ab9f9ec884e36ae0dad78a3e301"
   dependencies:
