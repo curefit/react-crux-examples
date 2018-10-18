@@ -40,8 +40,8 @@ class App extends Component {
                     <div style={{height: 40, paddingLeft: 4}}><Link to="/datepicker">Date Picker</Link></div>
                     <div style={{height: 40, paddingLeft: 4}}><Link to="/checkbox">Checkbox</Link></div>
                     <div style={{height: 40, paddingLeft: 4}}><Link to="/file">File Upload</Link></div>
-                    <div style={{height: 40, paddingLeft: 4}}>Custom Rendering</div>
-                    <div style={{height: 40, paddingLeft: 4}}>Dynamic Rendering</div>
+                    <div style={{height: 40, paddingLeft: 4}}>Custom Rendering (TBD)</div>
+                    <div style={{height: 40, paddingLeft: 4}}>Dynamic Rendering (TBD)</div>
                     <div style={{height: 40, paddingLeft: 4}}><Link to="/bigtext">Bigtext and Tinyinput</Link></div>
                 </div>
                 <div style={{flexDirection: "column", flex: 1, marginLeft: 200}}>
