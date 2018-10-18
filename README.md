@@ -1,4 +1,4 @@
-### react-crux-examples
+# react-crux-examples
 
 This repository contains all examples for [React Crux](https://github.com/curefit/react-crux).
 
