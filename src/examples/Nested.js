@@ -3,7 +3,7 @@ import { CruxComponentCreator } from "react-crux"
 import {Disclaimer} from "../Disclaimer"
 const schema = {
     modelName: "employees",
-    title: "Employees with list of free-form Tags",
+    title: "Employees with address",
     creationTitle: "Employee",
     editModal: true,
     fields: [

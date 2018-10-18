@@ -26,7 +26,6 @@ class App extends Component {
                     <div style={{height: 20}}></div>
                     <div style={{height: 40, paddingLeft: 4}}><Link to="/">Simple Table + Form</Link></div>
                     <div style={{height: 40, paddingLeft: 4}}><Link to="/options">Edit, Create Options</Link></div>
-                    <div style={{height: 40, paddingLeft: 4}}><Link to="/multi">Multiple Components</Link></div>
                     <div style={{height: 40, paddingLeft: 4}}><Link to="/select">Select</Link></div>
                     <div style={{height: 40, paddingLeft: 4}}><Link to="/iterable">Iterable</Link></div>
                     <div style={{height: 40, paddingLeft: 4}}><Link to="/iterableofselect">Iterable of Select</Link></div>

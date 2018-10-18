@@ -33,18 +33,19 @@ const schema = {
                     {
                         title: "Duration",
                         field: "duration",
-                        display: true,
+                        display: false,
                         editable: true,
                         type: "nested",
+                        displayChildren: "inline",
                         fields: [
                             {
                                 title: "Number",
                                 field: "number",
                                 display: true,
-                                editable: true
+                                editable: true,
                             },
                             {
-                                title: "Months/Years",
+                                title: "Duration",
                                 field: "durationType",
                                 display: true,
                                 editable: true,

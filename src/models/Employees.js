@@ -5,7 +5,30 @@ export const Employees = [
         emailAddress: "johndoe@cruxcomponent.com",
         gender: "MALE",
         tags: ["Tag1", "Tag2", "Tag3"],
-        roles: ["OWNER", "MANAGER"]
+        roles: ["OWNER", "MANAGER"],
+        history: [
+            {
+                companyName: "Acme Industries",
+                duration: {
+                    number: 2,
+                    durationType: "YEAR"
+                }
+            },
+            {
+                companyName: "Thingamajig Co",
+                duration: {
+                    number: 9,
+                    durationType: "MONTH"
+                }
+            },
+        ],
+        address: {
+            addressType: "HOME",
+            addressLine1: "221B",
+            addressLine2: "Baker Street",
+            city: "London",
+            zipCode: "45634"
+        }
     },
     {
         name: "John Hancock",
@@ -19,14 +42,36 @@ export const Employees = [
         age: "42",
         emailAddress: "janedoe@cruxcomponent.com",
         gender: "FEMALE",
-        roles: ["VIEWER"]
+        roles: ["VIEWER"],
+        history: [
+            {
+                companyName: "Pied Piper",
+                duration: {
+                    number: "5",
+                    durationType: "MONTH"
+                }
+            },
+            {
+                companyName: "Hooli",
+                duration: {
+                    number: "9",
+                    durationType: "YEAR"
+                }
+            },
+        ]
     },
     {
         name: "Ankit Gupta",
         age: "33",
         emailAddress: "ankit.gupta@cruxcomponent.com",
         gender: "MALE",
-        tags: ["Tag4", "Tag4"]
+        tags: ["Tag4", "Tag4"],
+        address: {
+            addressType: "OFFICE",
+            addressLine1: "12 Grimmauld Palace",
+            city: "London",
+            zipCode: "45634"
+        }
     }
 ]
 
