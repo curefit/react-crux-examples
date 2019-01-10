@@ -17,7 +17,7 @@ const creationDisabledSchema = {
         },
         {
             title: "Age",
-            readonly: true,
+            editable: true,
             display: true,
             field: "age"
         },
@@ -48,7 +48,7 @@ const editDisabledSchema = {
         },
         {
             title: "Age",
-            readonly: true,
+            editable: true,
             display: true,
             field: "age"
         },
@@ -79,7 +79,7 @@ const selectiveColumnsSchema = {
         },
         {
             title: "Age",
-            readonly: true,
+            editable: true,
             display: true,
             field: "age"
         },
@@ -105,6 +105,36 @@ const selectiveEditsSchema = {
             title: "Name",
             field: "name",
             editable: false,
+            representative: true,
+            display: true
+        },
+        {
+            title: "Age",
+            editable: true,
+            display: true,
+            field: "age"
+        },
+        {
+            title: "Email Address",
+            field: "emailAddress",
+            editable: true,
+            display: true
+        }
+    ],
+    createModal: false
+}
+
+const EmployeesSelectiveEdits = CruxComponentCreator.create(selectiveEditsSchema)
+
+const readonlySchema = {
+    modelName: "employees",
+    title: "Employees (Selective Readonly & Edits)",
+    creationTitle: "Employee",
+    editModal: true,
+    fields: [
+        {
+            title: "Name",
+            field: "name",
             readonly: true,
             representative: true,
             display: true
@@ -121,11 +151,10 @@ const selectiveEditsSchema = {
             editable: true,
             display: true
         }
-    ],
-    createModal: false
+    ]
 }
 
-const EmployeesSelectiveEdits = CruxComponentCreator.create(selectiveEditsSchema)
+const ReadonlyEdits = CruxComponentCreator.create(readonlySchema)
 
 class Options extends Component {
     render() {
@@ -145,6 +174,10 @@ class Options extends Component {
             <div style={{display: "flex", padding: 20, borderBottom: "1px solid #EEE"}}>
                 <div style={{width: 500}}><EmployeesSelectiveEdits/></div>
                 <pre>{JSON.stringify(selectiveEditsSchema, null, 2)}</pre>
+            </div>
+            <div style={{display: "flex", padding: 20, borderBottom: "1px solid #EEE"}}>
+                <div style={{width: 500}}><ReadonlyEdits/></div>
+                <pre>{JSON.stringify(readonlySchema, null, 2)}</pre>
             </div>
             <Disclaimer/>
         </div>

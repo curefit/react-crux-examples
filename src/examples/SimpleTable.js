@@ -17,7 +17,7 @@ const schema = {
         },
         {
             title: "Age",
-            readonly: true,
+            editable: true,
             display: true,
             field: "age"
         },
