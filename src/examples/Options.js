@@ -17,7 +17,7 @@ const creationDisabledSchema = {
         },
         {
             title: "Age",
-            editable: true,
+            readonly: true,
             display: true,
             field: "age"
         },
@@ -48,7 +48,7 @@ const editDisabledSchema = {
         },
         {
             title: "Age",
-            editable: true,
+            readonly: true,
             display: true,
             field: "age"
         },
@@ -79,7 +79,7 @@ const selectiveColumnsSchema = {
         },
         {
             title: "Age",
-            editable: true,
+            readonly: true,
             display: true,
             field: "age"
         },
@@ -105,12 +105,13 @@ const selectiveEditsSchema = {
             title: "Name",
             field: "name",
             editable: false,
+            readonly: true,
             representative: true,
             display: true
         },
         {
             title: "Age",
-            editable: true,
+            readonly: true,
             display: true,
             field: "age"
         },
