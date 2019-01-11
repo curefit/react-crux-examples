@@ -156,6 +156,38 @@ const readonlySchema = {
 
 const ReadonlyEdits = CruxComponentCreator.create(readonlySchema)
 
+const paginationSchema = {
+    modelName: "employees",
+    title: "Employees (Server Side Pagination)",
+    creationTitle: "Employee",
+    editModal: true,
+    paginate: {
+        defaultPageSize : 10,
+        allowedPageSizes : [10, 50, 100, 500, 1000]
+    },
+    fields: [
+        {
+            title: "Name",
+            field: "name",
+            editable: true,
+            representative: true,
+            display: true
+        },
+        {
+            title: "Age",
+            editable: true,
+            display: true,
+            field: "age"
+        },
+        {
+            title: "Email Address",
+            field: "emailAddress",
+            editable: true,
+            display: true
+        }
+    ]
+}
+
 class Options extends Component {
     render() {
         return <div style={{padding: 20}}>
@@ -178,6 +210,10 @@ class Options extends Component {
             <div style={{display: "flex", padding: 20, borderBottom: "1px solid #EEE"}}>
                 <div style={{width: 500}}><ReadonlyEdits/></div>
                 <pre>{JSON.stringify(readonlySchema, null, 2)}</pre>
+            </div>
+            <div style={{display: "flex", padding: 20, borderBottom: "1px solid #EEE"}}>
+                <div style={{width: 500}}><span>Server Side Pagination</span></div>
+                <pre>{JSON.stringify(paginationSchema, null, 2)}</pre>
             </div>
             <Disclaimer/>
         </div>
