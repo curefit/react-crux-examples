@@ -1,4 +1,4 @@
-import { CruxComponentCreator } from "react-crux"
+import { CruxComponentCreator, ModalComponent } from "react-crux"
 import React, {Component} from "react"
 import {Disclaimer} from "../Disclaimer"
 
@@ -156,6 +156,62 @@ const readonlySchema = {
 
 const ReadonlyEdits = CruxComponentCreator.create(readonlySchema)
 
+const customButtonSchema = {
+    modelName: "employees",
+    title: "Employees (Custom Button)",
+    creationTitle: "Employee",
+    editModal: true,
+    customModal: true,
+    customModalComponent: customModalComponent,
+    fields: [
+        {
+            title: "Name",
+            field: "name",
+            readonly: true,
+            representative: true,
+            display: true
+        }
+    ]
+}
+
+const customModalSchema = {
+    creationTitle: "Employees (Custom Modal)",
+    modelName: "employees",
+    fields: [
+        {
+            title: "Age",
+            editable: true,
+            field: "age",
+            representative: true
+        }
+    ]
+}
+
+function customModalComponent(model, closeModal, sucessDispatch, failureDispatch) {
+    class CustomModalComponent extends React.Component {
+
+        customModalSuccess( modelName, item) {
+            closeModal()
+        }
+
+        render() {
+            return (<ModalComponent
+                constants={customModalSchema}
+                showModal={true}
+                closeModal={closeModal}
+                modalType={"CUSTOM"}
+                successButtonLabel={"SAVE"}
+                item={model}
+                createOrModify={this.customModalSuccess}
+                additionalModels={[]}
+            />)
+        }
+    }
+    return CustomModalComponent
+}
+
+const CustomButton = CruxComponentCreator.create(customButtonSchema)
+
 const paginationSchema = {
     modelName: "employees",
     title: "Employees (Server Side Pagination)",
@@ -210,6 +266,10 @@ class Options extends Component {
             <div style={{display: "flex", padding: 20, borderBottom: "1px solid #EEE"}}>
                 <div style={{width: 500}}><ReadonlyEdits/></div>
                 <pre>{JSON.stringify(readonlySchema, null, 2)}</pre>
+            </div>
+            <div style={{display: "flex", padding: 20, borderBottom: "1px solid #EEE"}}>
+                <div style={{width: 500}}><CustomButton/></div>
+                <pre>{JSON.stringify(customButtonSchema, null, 2) + "\n Custom Modal Fields \n" + JSON.stringify(customModalSchema, null, 2)}</pre>
             </div>
             <div style={{display: "flex", padding: 20, borderBottom: "1px solid #EEE"}}>
                 <div style={{width: 500}}><span>Server Side Pagination</span></div>
