@@ -11,6 +11,6 @@ This demo website has been built using [create-react-app](https://github.com/fac
 - cd react-crux-examples
 - yarn
 - yarn run start
-- Local server will start running on http://localhost:3000/
+- Local server will start running on http://localhost:3000
 
 _Note : Since the examples have only client side code, the create, modify and delete calls will fail. To make them run, start a server which listens to /models_
