@@ -37,6 +37,5 @@
     "not op_mini all"
   ],
   "resolutions": {
-    "react-crux": "file:../react-crux"
   }
 }
