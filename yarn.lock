@@ -7090,10 +7090,8 @@ react-bootstrap@^0.32.3, react-bootstrap@^0.32.4:
     uncontrollable "^5.0.0"
     warning "^3.0.0"
 
-react-crux@^0.0.38:
+react-crux@^0.0.38, "react-crux@file:../react-crux":
   version "0.0.38"
-  resolved "https://registry.yarnpkg.com/react-crux/-/react-crux-0.0.38.tgz#4d3d115470aaf1ab444437ebc1ebdac46268917d"
-  integrity sha512-nc3YQI1EZtlEm+wRN2Qp2YZbIepvXpFEC6yaxkunSQyPQfdYqlGcUzXl7aXpPONx6fG6cR9Y3M4Wp24YjEm13w==
   dependencies:
     autobind-decorator "2.1.0"
     lodash "^4.17.10"
@@ -7142,7 +7140,7 @@ react-dev-utils@^6.0.5:
     strip-ansi "4.0.0"
     text-table "0.2.0"
 
-react-dom@^16.5.2:
+react-dom@^16.7.0:
   version "16.7.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.7.0.tgz#a17b2a7ca89ee7390bc1ed5eb81783c7461748b8"
   integrity sha512-D0Ufv1ExCAmF38P2Uh1lwpminZFRXEINJe53zRAbm4KPwSyd6DY/uDoS0Blj9jvPpn1+wivKpZYc8aAAN/nAkg==

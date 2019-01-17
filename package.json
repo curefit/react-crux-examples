@@ -9,8 +9,8 @@
     "node-sass": "^4.9.4",
     "react": "^16.5.2",
     "react-bootstrap": "^0.32.4",
-    "react-crux": "^0.0.26",
-    "react-dom": "^16.5.2",
+    "react-crux": "^0.0.38",
+    "react-dom": "^16.7.0",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.5",
@@ -35,5 +35,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "resolutions": {
+    "react-crux": "file:../react-crux"
+  }
 }
