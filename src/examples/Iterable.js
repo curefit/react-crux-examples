@@ -138,8 +138,6 @@ const customButtonIterableSchema = {
             field: "tags",
             type: "iterable",
             additionalButtons: {
-                reorder: true,
-                addAtIndex: true,
                 customButton: true,
                 customButtonAction: customButtonAction,
             },
