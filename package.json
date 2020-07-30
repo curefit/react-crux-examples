@@ -1,39 +1,40 @@
 {
-  "name": "react-crux-examples",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "bootstrap-sass": "^3.3.7",
-    "gh-pages": "^2.0.1",
-    "history": "^4.7.2",
-    "node-sass": "^4.9.4",
-    "react": "^16.5.2",
-    "react-bootstrap": "^0.32.4",
-    "react-crux": "^0.0.39",
-    "react-dom": "^16.7.0",
-    "react-redux": "^5.0.7",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "3.0.1",
-    "redux": "^4.0.1",
-    "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "homepage": "https://curefit.github.io/react-crux-examples",
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+	"name": "react-crux-examples",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"bootstrap-sass": "^3.3.7",
+		"gh-pages": "^2.0.1",
+		"history": "^4.7.2",
+		"node-sass": "^4.9.4",
+		"react": "^16.5.2",
+		"react-bootstrap": "^0.32.4",
+		"react-crux": "^0.0.39",
+		"react-dom": "^16.7.0",
+		"react-redux": "^5.0.7",
+		"react-router-dom": "^4.3.1",
+		"react-scripts": "3.0.1",
+		"redux": "^4.0.1",
+		"redux-logger": "^3.0.6",
+		"redux-thunk": "^2.3.0"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
+		"postpublish": "npm publish --registry https://npm.pkg.github.com/ --ignore-scripts"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"homepage": "https://curefit.github.io/react-crux-examples",
+	"browserslist": [
+		">0.2%",
+		"not dead",
+		"not ie <= 11",
+		"not op_mini all"
+	]
 }
