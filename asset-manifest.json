@@ -1,16 +1,24 @@
 {
-  "main.css": "/react-crux-examples/static/css/main.5bcacd36.chunk.css",
-  "main.js": "/react-crux-examples/static/js/main.8c8c0084.chunk.js",
-  "main.js.map": "/react-crux-examples/static/js/main.8c8c0084.chunk.js.map",
-  "static/css/1.7c75316b.chunk.css": "/react-crux-examples/static/css/1.7c75316b.chunk.css",
-  "static/js/1.e5ffd068.chunk.js": "/react-crux-examples/static/js/1.e5ffd068.chunk.js",
-  "static/js/1.e5ffd068.chunk.js.map": "/react-crux-examples/static/js/1.e5ffd068.chunk.js.map",
-  "runtime~main.js": "/react-crux-examples/static/js/runtime~main.b23c7967.js",
-  "runtime~main.js.map": "/react-crux-examples/static/js/runtime~main.b23c7967.js.map",
-  "static/media/App.scss": "/react-crux-examples/static/media/glyphicons-halflings-regular.fa277232.woff",
-  "static/css/1.7c75316b.chunk.css.map": "/react-crux-examples/static/css/1.7c75316b.chunk.css.map",
-  "static/css/main.5bcacd36.chunk.css.map": "/react-crux-examples/static/css/main.5bcacd36.chunk.css.map",
-  "index.html": "/react-crux-examples/index.html",
-  "precache-manifest.22ad071f1fe8ddafcb4732f57e390ff5.js": "/react-crux-examples/precache-manifest.22ad071f1fe8ddafcb4732f57e390ff5.js",
-  "service-worker.js": "/react-crux-examples/service-worker.js"
+  "files": {
+    "main.css": "/react-crux-examples/static/css/main.e185c9d6.chunk.css",
+    "main.js": "/react-crux-examples/static/js/main.e44b5486.chunk.js",
+    "main.js.map": "/react-crux-examples/static/js/main.e44b5486.chunk.js.map",
+    "runtime-main.js": "/react-crux-examples/static/js/runtime-main.4bc828da.js",
+    "runtime-main.js.map": "/react-crux-examples/static/js/runtime-main.4bc828da.js.map",
+    "static/css/2.f024a7ff.chunk.css": "/react-crux-examples/static/css/2.f024a7ff.chunk.css",
+    "static/js/2.a61a3a84.chunk.js": "/react-crux-examples/static/js/2.a61a3a84.chunk.js",
+    "static/js/2.a61a3a84.chunk.js.map": "/react-crux-examples/static/js/2.a61a3a84.chunk.js.map",
+    "index.html": "/react-crux-examples/index.html",
+    "static/css/2.f024a7ff.chunk.css.map": "/react-crux-examples/static/css/2.f024a7ff.chunk.css.map",
+    "static/css/main.e185c9d6.chunk.css.map": "/react-crux-examples/static/css/main.e185c9d6.chunk.css.map",
+    "static/js/2.a61a3a84.chunk.js.LICENSE.txt": "/react-crux-examples/static/js/2.a61a3a84.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/react-crux-examples/static/media/glyphicons-halflings-regular.be810be3.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4bc828da.js",
+    "static/css/2.f024a7ff.chunk.css",
+    "static/js/2.a61a3a84.chunk.js",
+    "static/css/main.e185c9d6.chunk.css",
+    "static/js/main.e44b5486.chunk.js"
+  ]
 }
