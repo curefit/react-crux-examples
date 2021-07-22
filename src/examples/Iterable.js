@@ -112,6 +112,46 @@ const addAtIndexSchema = {
 
 const EmployeesAddAtIndex = CruxComponentCreator.create(addAtIndexSchema)
 
+const defaultValueSchema = {
+    modelName: "employees",
+    title: "Employees with list of free-form Tags having default values",
+    creationTitle: "Employee",
+    editModal: true,
+    fields: [
+        {
+            title: "Name",
+            field: "name",
+            editable: true,
+            representative: true,
+            display: true
+        },
+        {
+            title: "Age",
+            editable: true,
+            display: true,
+            field: "age"
+        },
+        {
+            title: "Tags",
+            editable: true,
+            display: true,
+            field: "tags",
+            type: "iterable",
+            additionalButtons: {
+                addAtIndex: true
+            },
+            defaultValueFn: () => ["some initial value 1", "some initial value 2"],
+            iterabletype: {
+                title: "Tag",
+                defaultValueFn: () => "some default value"
+            }
+        }
+    ],
+    createModal: true
+}
+
+const EmployeesTagDefaultValue = CruxComponentCreator.create(defaultValueSchema)
+
 const customButtonIterableSchema = {
     modelName: "employees",
     title: "Employees with list of free-form Tags with custom button",
@@ -169,6 +209,10 @@ class Iterable extends Component {
             <div style={{ display: "flex", padding: 20, borderBottom: "1px solid #EEE" }}>
                 <div style={{ width: 500 }}><EmployeesAddAtIndex /></div>
                 <pre>{JSON.stringify(addAtIndexSchema, null, 2)}</pre>
+            </div>
+            <div style={{ display: "flex", padding: 20, borderBottom: "1px solid #EEE" }}>
+                <div style={{ width: 500 }}><EmployeesTagDefaultValue /></div>
+                <pre>{JSON.stringify(defaultValueSchema, null, 2)}</pre>
             </div>
             <div style={{ display: "flex", padding: 20, borderBottom: "1px solid #EEE" }}>
                 <div style={{ width: 500 }}><CustomButtonIterable /></div>
