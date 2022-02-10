@@ -6,7 +6,7 @@
 		"bootstrap-sass": "^3.4.1",
 		"gh-pages": "^3.2.3",
 		"history": "^4.7.2",
-		"node-sass": "^6.0.1",
+		"node-sass": "^7.0.0",
 		"react": "^16.5.2",
 		"react-bootstrap": "^1.6.1",
 		"react-crux": "^0.24.0",
